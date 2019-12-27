@@ -1,0 +1,222 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* ------------------------------------------Variables */
+:root
+{
+/* -------------------Colors */
+--green-color: #7ACC2D;
+--black-color: #313337;
+--white-color: white;
+/* --------------------Typo */
+--normal: 12px;
+/* -------------------Space */
+--space: 10px;
+--space-2: 20px;
+/* --------------Box shadow */
+--box: 0px 0 2px 1px #e6e5e9;
+/* ------------------Border */
+--border: 1px solid rgba(0, 0, 0, 0.07)
+}
+
+/* ------------------------------------------Variables */
+
+html,body
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--black-color);
+}
+p, label
+{
+    font-size: var(--normal);
+}
+
+/* ---------------------------------Here starts nav bar */
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: var(--space);
+    min-height: 60px;
+    background-color: var(--green-color);
+}
+nav a
+{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: var(--normal);
+}
+nav a:hover
+{
+    color: var(--white-color);
+}
+nav ul
+{
+    display: flex;
+}
+nav ul li
+{
+    padding-right: 20px;
+    list-style: none;
+}
+hr
+{
+    opacity: .2;
+}
+/* ---------------------------------Here finishes nav bar */
+
+/* ----------------------------------Here starts products */
+.main_section
+{
+    text-align: center;
+    padding: 15%;
+}
+.products
+{
+    background-image: url("../images/curve.png");
+    padding: 15%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 95px;
+    background-size: cover;  
+}
+.product
+{
+    padding: var(--space-2);
+    margin-top: -226px;
+}
+.img_product
+{
+    text-align: center;
+}
+.content
+{
+    padding: var(--space-2);
+    background: var(--white-color);
+    border-radius: 3px;
+    box-shadow: var(--box);
+}
+
+.main_button
+{
+    padding: var(--space);
+    background-color: var(--green-color);
+    width: 100%;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    color: var(--white-color);
+}
+.main_button:hover
+{
+    background-color: #63a426;
+}
+
+/* ----------------------------------Here starts benefits */
+.benefits
+{
+    padding: 10%;
+    display: flex;
+}
+.benefit
+{
+    padding: var(--space-2);
+    text-align: center;
+}
+.img_benefit
+{
+    max-height: 100px;
+}
+.text_benefit
+{
+    text-align: justify;
+}
+/* -------------------------------Here finishes benefits */
+
+/* ---------------------------------Here starts mentions */
+.last_section
+{
+    text-align: center;
+}
+.mentions
+{
+    display: flex;
+    padding: 5%;
+}
+.mention img
+{
+    width: 100%;
+}
+.mention
+{
+    padding: var(--space);
+}
+.content_mention
+{
+    box-shadow: var(--box);
+}
+.mention .text
+{
+    padding: var(--space);
+}
+/* -------------------------------Here finishes mentions */
+
+/* -------------------------------------------------Form */
+.modulo_pago
+{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+.modulo_pago_images
+{
+    max-width: 150px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.data
+{
+    margin-top: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+}
+
+.modulo_pago .main_button
+{
+    margin-top: 10px;
+}
+/* -------------------------------------------------Form */
+
+/* -----------------------------------Here starts footer */
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--normal);
+    background-color: var(--black-color);
+    padding: var(--space);
+    color: var(--white-color);
+}
+
+.contact a{
+    color: var(--green-color);
+}
+/* ---------------------------------Here finishes footer */
